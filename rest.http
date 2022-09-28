@@ -1,0 +1,33 @@
+GET http://localhost:6000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjQzNTkxOTUsImV4cCI6MTY2NDM1OTIyMCwiYXVkIjoiNjMzMzA2ZjY0NWY2NGEyMjYxMTM1ZTk0IiwiaXNzIjoicGljLmNvbSJ9.ySTCq2L38ZiKbyfjNoIQO8yxEqn89yhO4wjY9AIx6os
+
+
+### Login Route
+POST http://localhost:6000/auth/login
+Content-Type: application/json
+
+{
+    "email":"kirssaxdnass@gmail.com",
+    "password":"qwerty"
+}
+
+
+
+### Register Route
+POST http://localhost:6000/auth/register
+Content-Type: application/json
+
+{
+    "email":"kirssaxadnass@gmail.com",
+    "password":"qwerty"
+}
+### Refresh  Route
+POST http://localhost:6000/auth/refresh-token
+Content-Type: application/json
+
+{
+   "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjQzNTkxNTMsImV4cCI6MTY5NTkxNjc1MywiYXVkIjoiNjMzMzA2ZjY0NWY2NGEyMjYxMTM1ZTk0IiwiaXNzIjoicGljLmNvbSJ9.lbhp8-DBAbv-fxREEiTAZNkNCdH1GLC4t7CKjwxvWrY"
+}
+
+### Logout Route
+DELETE  http://localhost:6000/auth/logout
